@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formatando String em JavaScript</title>
+    <style>
+        body {
+            font: normal 14pt Arial;
+            color: rgb(12, 12, 12);
+        }
+        body {
+            background-color: rgb(104, 184, 177);
+        }
+    </style>
+    <style>
+        mark{background-color: rgb(173, 142, 202);
+
+        }
+    </style>
+</head>
+<body>
+    <h1>Java Script</h1>
+    <h2>Formatando Strings</h2>
+    <h3>Comandos para mostrar o nome de qualquer pessoa, <br>somando as letras do seu nome
+        e mostrando o nome <br> digitado em MAIÚSCULAS e minúsculas</h3>
+    <script>
+        var nome = window.prompt('Qual é o seu nome?')
+        document.write(`Olá, <strong>${nome}</strong>! seu nome tem ${nome.length} letras.<br/>`)
+        document.write(`Seu nome em maiúsculas é ${nome.toUpperCase()}<br/>`)
+        document.write(`Seu nome em minúsculas é ${nome.toLowerCase()}<br/>`)
+    </script>
+    <p>Para que sejam contadas as letras do nome digitado foi usado <br>
+    o comando <mark>&lt;${nome.length} letras.&gt;</mark> </p>
+    <p>Para que o nome apareça em MAIÚSCULAS <br> foi usado <mark>&lt;${nome.toUpperCase()}&gt;</mark></p>
+    <p>Para que o nome apareça em minúsculas foi usado <br> o comando <mark>&lt;${nome.toLowerCase()}&gt;</mark> </p>
+</body>
+</html>
